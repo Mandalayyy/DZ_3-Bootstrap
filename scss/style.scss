@@ -1,0 +1,168 @@
+$white: #fff;
+$grey: #ced4da;
+$lightgrey: #f0f0f0;
+$navy: rgb(35, 10, 146);
+$red: #dc3545;
+
+%img {
+  object-fit: cover;
+}
+
+%buttons {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: x-small;
+    background-color: $red;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1px 4px;
+  }
+}
+
+%flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a.logo {
+  color: $white;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 2rem;
+  
+  &:hover {
+    color: $white;
+  }
+  svg {
+    transform: rotate(-30deg);
+    margin-right: 10px;
+  }
+}
+
+.header {
+  padding: 10px;
+}
+
+.profile-img {
+  @extend %img;
+  width: 200px;
+  height: 200px;
+}
+
+.user-img {
+  @extend %img;
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .user-img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.register-img {
+  @extend %img;
+  min-width: 180px;
+  height: auto;
+}
+
+.btn-alarm {
+  @extend %buttons;
+
+  &::after {
+    content: '3+';
+  }
+}
+
+.btn-message {
+  @extend %buttons;
+
+  &::after {
+    content: '7';
+  }
+}
+
+.bg-main {
+  background-color: $lightgrey;
+}
+
+.goals-img {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: $grey;
+}
+
+.goals-text {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.checkbox {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ced4da;
+  border-radius: 3px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.rounded-more {
+  border-radius: 2rem;
+}
+
+.progress-width {
+  width: 70%;
+  margin-left: 1.2rem;
+}
+
+.list-group-item>div {
+  @extend %flex;
+  margin-bottom: 10px;
+}
+
+.btn-facebook {
+  background-color: $navy;
+  color: $white;
+}
+
+.register-button {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $grey;
+}
+
+.button-up {
+  position: fixed;
+  right: 2rem;
+  bottom: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  background-color: $grey;
+}
+
+.popover::after {
+  content: 'x';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+}
