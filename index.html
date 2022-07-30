@@ -11,10 +11,11 @@
   <title>Goals</title>
 </head>
 
-<body>
-  <div class="container overflow-hidden">
-    <div class="row">
-      <div class="col-md-2 bg-primary">
+<body class="">
+  <div class="progress-bar-site"></div>
+  <div class=" overflow-hidden ">
+    <div class="row ">
+      <div class="nav-site col-md-2 bg-primary ">
         <nav class="d-none d-md-block navbar flex-column navbar-dark">
           <a class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -61,6 +62,7 @@
             </li>
           </ul>
         </nav>
+        
       </div>
 
       <div class="col-12 col-md-10 position-relative">
@@ -121,14 +123,17 @@
             </svg>
           </button>
           <div class="col-1 col-md-3">
-            <div class="profile">
-              <a class="text-secondary d-none d-md-inline-block href=" #" data-text="O">Nix Student</a>
+            <div class="profile justify-content-between">
+              <a class="text-secondary d-none d-md-inline-block "href="profile.html" data-text="O">Nix Student</a>
               <img class="user-img rounded-circle" src="img/user-img2.jpg" alt="">
+              <button type="button" onclick="myFunction()" class="mode btn btn-dark">Dark</button>
             </div>
+            
           </div>
         </header>
 
-        <main class="row p-4 bg-main">
+        <main class="row p-5 bg-main">
+          
           <h1 class="col-12 col-md-6 mb-3"><small>Goals</small></h1>
           <div class="col-md-6 d-none d-md-block my-3">
             <button class="btn btn-primary float-right" type="button">
@@ -141,51 +146,61 @@
               </svg>
               Generate Report</button>
           </div>
-          <div class="col-12 col-md-6 shadow p-3 bg-light mb-3">
-            <h5 class="text-uppercase text-primary" href="#">Earnings (monthly)</h5>
-            <p class="goals-text">$40,000</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="" class="bi bi-calendar-fill goals-img"
-              viewBox="0 0 16 16">
-              <path
-                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z" />
-            </svg>
-          </div>
-          <div class="col-12 col-md-6 shadow p-3 g-5 bg-light mb-3">
-            <h5 class="text-uppercase text-success" href="#">Earnings (annual)</h5>
-            <p class="goals-text">$215,000</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill=""
-              class="bi bi-currency-dollar goals-img" viewBox="0 0 16 16">
-              <path
-                d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
-            </svg>
-          </div>
-          <div class="col-12 col-md-6 shadow p-3 bg-light mb-3">
-            <h5 class="text-uppercase text-info" href="#">Tasks</h5>
-            <div class="goals-text d-flex align-items-center">50%
-              <div class="progress progress-width">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="d-flex flex-wrap w-100">
+            <div class="col-12 col-md-6 mb-4">
+              <div class="p-4 shadow  bg-light" >
+                <h5 class="text-uppercase text-primary" href="#">Earnings (monthly)</h5>
+                <p class="goals-text">$40,000</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="" class="bi bi-calendar-fill goals-img"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z" />
+                </svg>
               </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="" class="bi bi-journal-text goals-img"
-              viewBox="0 0 16 16">
-              <path
-                d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
-              <path
-                d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
-              <path
-                d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
-            </svg>
-
-          </div>
-          <div class="col-12 col-md-6 shadow p-3 bg-light mb-3">
-            <h5 class="text-uppercase text-warning" href="#">Pending requests</h5>
-            <p class="goals-text">18</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="" class="goals-img bi bi-chat-fill"
-              viewBox="0 0 16 16">
-              <path
-                d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
-            </svg>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="shadow p-4 bg-light">
+                <h5 class="text-uppercase text-success" href="#">Earnings (annual)</h5>
+                <p class="goals-text">$215,000</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill=""
+                  class="bi bi-currency-dollar goals-img" viewBox="0 0 16 16">
+                  <path
+                    d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                </svg>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="shadow p-4 bg-light">
+                <h5 class="text-uppercase text-info" href="#">Tasks</h5>
+                <div class="goals-text d-flex align-items-center mb-3">50%
+                  <div class="progress progress-width">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="" class="bi bi-journal-text goals-img"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                  <path
+                    d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
+                  <path
+                    d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
+                </svg>
+              </div>
+            </div>
+            <div class="col-12 col-md-6  mb-4 ">
+              <div class="shadow bg-light p-4">
+                <h5 class="text-uppercase text-warning" href="#">Pending requests</h5>
+                <p class="goals-text">18</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="" class="goals-img bi bi-chat-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                </svg>
+              </div>
+              
+            </div>
           </div>
           <div class="col-12 my-5 card shadow">
             <h2 class="h2 card-header py-3 text-primary title">Todo List</h2>
@@ -209,13 +224,16 @@
               </ul>
             </div>
           </div>
+          
         </main>
 
         <footer class="row p-3">
           <p class="col-12 text-center">Copyright &copy; Nix Student 2022</p>
+          <div class="browser-info"></div>
+          <div class="full-info"></div>
         </footer>
-        <div class="button-up">
-          <a href="#top">
+        <div class="button-up" id="nav--bar">
+          <a href="#top" class="link--a" onclick="scrollToTop();return false">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-up"
               viewBox="0 0 16 16">
               <path fill-rule="evenodd"
@@ -226,6 +244,8 @@
       </div>
     </div>
   </div>
+
+  <script src="js/script.js"></script>
 
   <!-- jQuery library -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

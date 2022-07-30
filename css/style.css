@@ -76,7 +76,7 @@
 
 .goals-img {
   position: absolute;
-  right: 1rem;
+  right: 30px;
   top: 50%;
   transform: translateY(-50%);
   fill: #ced4da;
@@ -143,4 +143,19 @@
   right: 0;
   width: 16px;
   height: 16px;
+}
+
+.progress-bar-site{
+  height: 4px;
+  z-index: 10;
+  width: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: blue;
+}
+
+.dark{
+  background-color: #272822;
+  color: white;
 }
