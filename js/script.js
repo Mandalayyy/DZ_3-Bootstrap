@@ -13,13 +13,13 @@ progress.style.width = per+'%';
 
 }
 
-/* document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 window.onkeydown = function(evt) {
     if(evt.keyCode == 123) return false;
 };
 window.onkeypress = function(evt) {
     if(evt.keyCode == 123) return false;
-}; */
+};
 
 let inactivityTime = function () {
     let time;
@@ -92,3 +92,21 @@ function myFunction() {
             scrollAnimation = setTimeout("scrollToTop()", 30);
         } else clearTimeout(scrollAnimation);
     }
+
+    const form = document.getElementById('myForm');
+
+    form.addEventListener("submit",(e)=> {
+        e.preventDefault();
+        window.open('index.html','_self')
+        const data = Object.fromEntries(new FormData(e.target).entries());
+     
+
+        window.localStorage.setItem('key2', JSON.stringify(data))
+        
+    
+      
+    
+    });
+    const key2 = window.localStorage.getItem('key2');
+    const dataa = JSON.parse(key2);
+    alert(JSON.stringify(dataa));
